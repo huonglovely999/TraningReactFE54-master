@@ -8,16 +8,18 @@ import HandbleEvent from './HanbleEvent/HandbleEvent';
 import DataBidingClassComponent from './DataBinding/DataBidingClassComponent';
 import DemoState from './DemoState/DemoState';
 import BaiTapChonXe from './DemoState/BaiTapChonXe/BaiTapChonXe';
+import RenderWithMap from './RenderWithMap/RenderWithMap';
 
 function App() {
   return (
     <div className="App">
-      {/* <BaiTapLayout />
+      <BaiTapLayout />
       <DataBinding />
       <DataBidingClassComponent/>
-      <HandbleEvent /> */}
-      {/* <DemoState /> */}
+      <HandbleEvent />
+      <DemoState />
       <BaiTapChonXe />
+      <RenderWithMap />
     </div>
   );
 }

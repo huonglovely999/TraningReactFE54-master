@@ -1,13 +1,26 @@
 import React, { Component } from 'react'
 
 export default class BaiTapChonXe extends Component {
+    state = {
+        imgSrc: './img/car/products/red-car.jpg'//Giá trị mặc định của state
+    }
+    changeColor = (newColor) => {
+        this.setState({
+            imgSrc: './img/car/product/${newColor}-car.jpg'
+        })
+    }
+
+
     render() {
         return (
             <div>
                 <div className="row mt-3 border border-dark p-5">
                     <div className="col-6">
                         //Hình ảnh của xe
-                        <img src="./img/car/product/red-car.jpg" className="w-100" />
+                        <img onClick {() => {
+                            this.changeColor('red')
+                            })
+                        }} src="./img/car/product/red-car.jpg" className="w-100" />
                     </div>
                     <div className="col-6">
                         //Nút option
@@ -30,7 +43,10 @@ export default class BaiTapChonXe extends Component {
                 <div className="row mt-3 border border-dark p-5">
                     <div className="col-6">
                         //Hình ảnh của xe
-                        <img src="./img/car/product/red-car.jpg" className="w-100" />
+                        <img onClick {() => {
+                            this.changeColor('red')
+                            })
+                        }} src="./img/car/product/red-car.jpg" className="w-100" />
                     </div>
                     <div className="col-6">
                         //Nút option
@@ -53,7 +69,11 @@ export default class BaiTapChonXe extends Component {
                 <div className="row mt-3 border border-dark p-5">
                     <div className="col-6">
                         //Hình ảnh của xe
-                        <img src="./img/car/product/red-car.jpg" className="w-100" />
+                        <img onClick {() => {
+                            this.changeColor('red')
+                                imgSrc: './img/car/product/red-car.jpg'
+                            })
+                        }} src="./img/car/product/red-car.jpg" className="w-100" />
                     </div>
                     <div className="col-6">
                         //Nút option
@@ -76,7 +96,11 @@ export default class BaiTapChonXe extends Component {
                 <div className="row mt-3 border border-dark p-5">
                     <div className="col-6">
                         //Hình ảnh của xe
-                        <img src="./img/car/product/red-car.jpg" className="w-100" />
+                        <img onClick () => {
+                            this.changeColor('red')
+                                imgSrc: './img/car/product/red-car.jpg'
+                            }}
+                        }} src="./img/car/product/red-car.jpg" className="w-100" />
                     </div>
                     <div className="col-6">
                         //Nút option
